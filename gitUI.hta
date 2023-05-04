@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <title>Simple HTA Example</title>
+  <hta:application
+    applicationname="SimpleHTAExample"
+    sysmenu="yes"
+    borderStyle="normal"
+    maximizebutton="no"
+    minimizebutton="yes"
+    navigable="no"
+    scroll="no"
+    singleinstance="yes"
+    windowstate="normal">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+  </style>
+  <script language="VBScript" src="script.vbs"></script>
+</head>
+<body>
+  <h1>Simple HTA Example</h1>
+  <button id="Button1" onclick="Button1_Click()">Button 1</button>
+  <button id="Button2" onclick="Button2_Click()">Button 2</button>
+  <button id="Button3" onclick="Button3_Click()">Button 3</button>
+  <button id="Button4" onclick="Button4_Click()">Button 4</button>
+</body>
+</html>
