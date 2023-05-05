@@ -1,7 +1,7 @@
 ' vbscript
 
 Sub Button1_Click()
-  ' write command to ipconfig and show current ONLY the ip address in a new msgbox
+  ' write command to run ipconfig and show ONLY the ip address in a new msgbox
   Dim objShell, objExecObject, strText
   Set objShell = CreateObject("WScript.Shell")
   Set objExecObject = objShell.Exec("ipconfig")
@@ -11,7 +11,7 @@ Sub Button1_Click()
   Dim strIP
   strIP = Mid(strText, InStr(strText, "IPv4 Address") + 36, 15)
   MsgBox strIP, vbInformation, "IP Address"
-  
+
 End Sub
 
 Sub Button2_Click()
