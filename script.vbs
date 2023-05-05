@@ -11,7 +11,6 @@ Sub Button1_Click()
   Dim strIP
   strIP = Mid(strText, InStr(strText, "IPv4 Address") + 36, 15)
   MsgBox strIP, vbInformation, "IP Address"
-
 End Sub
 
 Sub Button2_Click()
